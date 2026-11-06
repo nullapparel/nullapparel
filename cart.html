@@ -1,0 +1,35 @@
+    <link rel="stylesheet" href="style.css">
+    <link rel="script,js" href="scrip.js">
+    <link rel="shop.html" href="shop.html">
+    <link rel="about.html" href="about.html">
+    <link rel="contact.html" href="contact.html">
+    <link rel="index.html" href="index.html">
+    <link rel="home.html" href="home.html">
+
+<!-- Floating Cart Trigger Button (වෙබ් අයිකන් එක) -->
+<button id="cart-toggle-btn" class="floating-cart-btn">
+    🛒 <span id="cart-count">0</span>
+</button>
+
+<!-- Slide-over Cart Drawer -->
+<div id="cart-drawer" class="cart-drawer">
+    <div class="cart-header">
+        <h3>YOUR SHOPPING BAG</h3>
+        <button id="cart-close-btn" class="close-btn">&times;</button>
+    </div>
+    
+    <div id="cart-items" class="cart-items-container">
+        <!-- Cart Items එකතු වෙන්නේ මෙතැනටයි -->
+        <p class="empty-cart-text">Your bag is currently empty.</p>
+    </div>
+
+    <div class="cart-footer">
+        <div class="cart-total-row">
+            <span>Total:</span>
+            <span id="cart-total">LKR 0.00</span>
+        </div>
+        <button id="whatsapp-checkout-btn" class="checkout-btn">CHECKOUT VIA WHATSAPP</button>
+    </div>
+</div>
+
+<div id="cart-overlay" class="cart-overlay"></div>

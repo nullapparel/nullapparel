@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NULL — User Profile</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;800;900&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    
+    <style>
+        .profile-container {
+            max-width: 900px;
+            margin: 120px auto 60px auto;
+            padding: 0 20px;
+            font-family: 'Space Grotesk', sans-serif;
+        }
+
+        .profile-header {
+            display: flex;
+            align-items: center;
+            gap: 25px;
+            background: rgba(13, 13, 18, 0.85);
+            border: 1px solid rgba(157, 78, 221, 0.3);
+            border-radius: 12px;
+            padding: 30px;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 0 25px rgba(157, 78, 221, 0.1);
+            margin-bottom: 30px;
+        }
+
+        .profile-avatar {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            background: rgba(157, 78, 221, 0.2);
+            border: 2px solid #9d4edd;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Orbitron', sans-serif;
+            font-size: 2rem;
+            color: #fff;
+            box-shadow: 0 0 15px rgba(157, 78, 221, 0.4);
+        }
+
+        .profile-info h2 {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 1.6rem;
+            color: #fff;
+            margin-bottom: 5px;
+        }
+
+        .profile-info p {
+            color: #9d4edd;
+            font-size: 0.9rem;
+            font-family: 'Space Grotesk', sans-serif;
+        }
+
+        .badge-verified {
+            display: inline-block;
+            margin-top: 8px;
+            background: rgba(0, 255, 135, 0.1);
+            color: #00FF87;
+            border: 1px solid #00FF87;
+            font-family: 'Orbitron', sans-serif;
+            font-size: 0.7rem;
+            padding: 3px 8px;
+            border-radius: 4px;
+        }
+
+        .section-box {
+            background: rgba(13, 13, 18, 0.85);
+            border: 1px solid rgba(157, 78, 221, 0.2);
+            border-radius: 12px;
+            padding: 30px;
+            margin-bottom: 30px;
+        }
+
+        .section-box h3 {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 1.1rem;
+            color: #fff;
+            margin-bottom: 20px;
+            border-bottom: 1px solid rgba(157, 78, 221, 0.2);
+            padding-bottom: 10px;
+            letter-spacing: 1px;
+        }
+
+        .order-history-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: rgba(0, 0, 0, 0.4);
+            border: 1px solid rgba(157, 78, 221, 0.2);
+            padding: 15px 20px;
+            border-radius: 8px;
+            margin-bottom: 12px;
+        }
+
+        .order-details h4 {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 0.95rem;
+            color: #fff;
+        }
+
+        .order-details p {
+            font-size: 0.8rem;
+            color: #888;
+            margin-top: 4px;
+        }
+
+        .logout-btn {
+            background: transparent;
+            color: #ff4d4d;
+            border: 1px solid #ff4d4d;
+            padding: 10px 20px;
+            font-family: 'Orbitron', sans-serif;
+            font-size: 0.85rem;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .logout-btn:hover {
+            background: #ff4d4d;
+            color: #fff;
+            box-shadow: 0 0 15px rgba(255, 77, 77, 0.5);
+        }
+
+        @media (max-width: 768px) {
+            .profile-header {
+                flex-direction: column;
+                text-align: center;
+            }
+            .order-history-item {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header / Navbar -->
+    <header class="navbar">
+        <div class="logo">NULL</div>
+        <nav class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="shop.html">Shop</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+            <a href="profile.html" style="color: #fff;">Profile</a>
+        </nav>
+    </header>
+
+    <!-- Main Profile Content -->
+    <main class="profile-container">
+        
+        <!-- Header Profile Info -->
+        <div class="profile-header">
+            <div class="profile-avatar" id="user-avatar">N</div>
+            <div class="profile-info">
+                <h2 id="user-name">IDENTIFIER #060</h2>
+                <p id="user-email">user@null.lk</p>
+                <span class="badge-verified">AUTHENTICATED MEMBER</span>
+            </div>
+        </div>
+
+        <!-- Account Ledger / Orders -->
+        <div class="section-box">
+            <h3>TRANSMISSION LEDGER (ORDER HISTORY)</h3>
+            
+            <div class="order-history-item">
+                <div class="order-details">
+                    <h4>DROP 01 — CORE TEE I (SIZE M)</h4>
+                    <p>Serial: EX #03 / 10 &bull; Date: 2026-10-15</p>
+                </div>
+                <span style="color: #00FF87; font-family: 'Orbitron', sans-serif; font-size: 0.85rem;">CONFIRMED</span>
+            </div>
+
+            <div class="order-history-item">
+                <div class="order-details">
+                    <h4>DROP 01 — CORE TEE II (SIZE L)</h4>
+                    <p>Serial: EX #07 / 10 &bull; Date: 2026-11-01</p>
+                </div>
+                <span style="color: #00FF87; font-family: 'Orbitron', sans-serif; font-size: 0.85rem;">DELIVERED</span>
+            </div>
+        </div>
+
+        <!-- Account Actions -->
+        <div style="text-align: right;">
+            <button class="logout-btn" onclick="alert('Session Terminated.')">LOGOUT / DISCONNECT</button>
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer" style="border-top: 1px solid rgba(157,78,221,0.2); margin-top: 80px;">
+        <div class="footer-copy">© 2026 NULL. ALL RIGHTS RESERVED.</div>
+        <div class="footer-links">
+            <a href="index.html">HOME</a>
+            <a href="shop.html">SHOP</a>
+        </div>
+    </footer>
+
+</body>
+</html>

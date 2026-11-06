@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NULL — Official Store</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;800;900&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="cart.html" href="cart.html">
+</head>
+<body>
+
+    <!-- Header / Navbar -->
+    <header class="navbar">
+        <div class="logo">NULL</div>
+        <nav class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="shop.html" style="color: #fff;">Shop</a>
+            <a href="contact.html">Contact</a>
+            <a href="https://nullapparel.github.io/null-verify/?id=EX01" class="verify-link" target="_blank">Authenticate</a>
+        </nav>
+    </header>
+
+    <!-- Shop Container -->
+    <main class="shop-container" style="padding: 120px 40px 60px 40px; max-width: 1400px; margin: 0 auto;">
+        
+        <div class="section-label">
+            <span>OFFICIAL STORE // DROP 01</span>
+            <span>LIMITED STOCK (M & L)</span>
+        </div>
+
+        <div class="product-grid">
+            <!-- Product Card 1 -->
+            <div class="product-card">
+                <div class="product-img-box">
+                    <img src="img-wrapper/boy3.png" alt="CORE TEE I" class="zoomable-img">
+                </div>
+                <div class="product-info">
+                    <span class="product-tag">#01 / PHASE 01 - DROP 01</span>
+                    <h3 class="product-title">CORE TEE I — BLACK</h3>
+                    <p class="product-price">LKR 9,500.00</p>
+                    
+                    <!-- Size Selection -->
+                    <div style="margin: 15px 0;">
+                        <span style="font-size: 0.75rem; color: #888; font-family: 'Orbitron', sans-serif; display: block; margin-bottom: 5px;">SELECT SIZE:</span>
+                        <div class="size-selector" style="display: flex; gap: 10px;">
+                            <button type="button" class="size-btn active" onclick="selectSize(this, 'M')" style="background: #9d4edd; color: #fff; border: 1px solid #9d4edd; padding: 5px 12px; cursor: pointer; border-radius: 4px; font-family: 'Orbitron', sans-serif;">M</button>
+                            <!--<button type="button" class="size-btn" onclick="selectSize(this, 'L')" style="background: transparent; color: #aaa; border: 1px solid rgba(157,78,221,0.3); padding: 5px 12px; cursor: pointer; border-radius: 4px; font-family: 'Orbitron', sans-serif;">L</button>-->
+                        </div>
+                    </div>
+
+                    <button onclick="addToCart('CORE TEE I — BLACK (Size: M)', 12500)" class="hero-btn" style="width: 100%; text-align: center; padding: 10px; cursor: pointer; margin-top: 5px;">ADD TO BAG</button>
+                </div>
+            </div>
+
+            <!-- Product Card 2 -->
+            <div class="product-card">
+                <div class="product-img-box">
+                    <img src="img-wrapper/girl2.png" alt="CORE TEE II" class="zoomable-img">
+                </div>
+                <div class="product-info">
+                    <span class="product-tag">#02 / PHASE 01 - DROP 01</span>
+                    <h3 class="product-title">CORE TEE II — BLACK</h3>
+                    <p class="product-price">LKR 9,500.00</p>
+                    
+                    <div style="margin: 15px 0;">
+                        <span style="font-size: 0.75rem; color: #888; font-family: 'Orbitron', sans-serif; display: block; margin-bottom: 5px;">SELECT SIZE:</span>
+                        <div class="size-selector" style="display: flex; gap: 10px;">
+                            <button type="button" class="size-btn active" onclick="selectSize(this, 'M')" style="background: #9d4edd; color: #fff; border: 1px solid #9d4edd; padding: 5px 12px; cursor: pointer; border-radius: 4px; font-family: 'Orbitron', sans-serif;">M</button>
+                            <!--<button type="button" class="size-btn" onclick="selectSize(this, 'L')" style="background: transparent; color: #aaa; border: 1px solid rgba(157,78,221,0.3); padding: 5px 12px; cursor: pointer; border-radius: 4px; font-family: 'Orbitron', sans-serif;">L</button>-->
+                        </div>
+                    </div>
+
+                    <button onclick="addToCart('CORE TEE II — BLACK (Size: M)', 12500)" class="hero-btn" style="width: 100%; text-align: center; padding: 10px; cursor: pointer; margin-top: 5px;">ADD TO BAG</button>
+                </div>
+            </div>
+
+            <!-- Product Card 3 -->
+            <div class="product-card">
+                <div class="product-img-box">
+                    <img src="img-wrapper/boy2.png" alt="CORE TEE III" class="zoomable-img">
+                </div>
+                <div class="product-info">
+                    <span class="product-tag">#03 / PHASE 01 - DROP 01</span>
+                    <h3 class="product-title">CORE TEE III — BLACK</h3>
+                    <p class="product-price">LKR 9,500.00</p>
+                    
+                    <div style="margin: 15px 0;">
+                        <span style="font-size: 0.75rem; color: #888; font-family: 'Orbitron', sans-serif; display: block; margin-bottom: 5px;">SELECT SIZE:</span>
+                        <div class="size-selector" style="display: flex; gap: 10px;">
+                            <!--<button type="button" class="size-btn active" onclick="selectSize(this, 'M')" style="background: #9d4edd; color: #fff; border: 1px solid #9d4edd; padding: 5px 12px; cursor: pointer; border-radius: 4px; font-family: 'Orbitron', sans-serif;">M</button>-->
+                            <button type="button" class="size-btn" onclick="selectSize(this, 'L')" style="background: transparent; color: #aaa; border: 1px solid rgba(157,78,221,0.3); padding: 5px 12px; cursor: pointer; border-radius: 4px; font-family: 'Orbitron', sans-serif;">L</button>
+                        </div>
+                    </div>
+
+                    <button onclick="addToCart('CORE TEE III — BLACK (Size: M)', 12500)" class="hero-btn" style="width: 100%; text-align: center; padding: 10px; cursor: pointer; margin-top: 5px;">ADD TO BAG</button>
+                </div>
+            </div>
+
+            <!-- Product Card 4 -->
+            <div class="product-card">
+                <div class="product-img-box">
+                    <img src="img-wrapper/girl3.png" alt="CORE TEE III" class="zoomable-img">
+                </div>
+                <div class="product-info">
+                    <span class="product-tag">#04 / PHASE 01 - DROP 01</span>
+                    <h3 class="product-title">CORE TEE III — BLACK</h3>
+                    <p class="product-price">LKR 9,500.00</p>
+                    
+                    <div style="margin: 15px 0;">
+                        <span style="font-size: 0.75rem; color: #888; font-family: 'Orbitron', sans-serif; display: block; margin-bottom: 5px;">SELECT SIZE:</span>
+                        <div class="size-selector" style="display: flex; gap: 10px;">
+                            <!--<button type="button" class="size-btn active" onclick="selectSize(this, 'M')" style="background: #9d4edd; color: #fff; border: 1px solid #9d4edd; padding: 5px 12px; cursor: pointer; border-radius: 4px; font-family: 'Orbitron', sans-serif;">M</button>-->
+                            <button type="button" class="size-btn" onclick="selectSize(this, 'L')" style="background: transparent; color: #aaa; border: 1px solid rgba(157,78,221,0.3); padding: 5px 12px; cursor: pointer; border-radius: 4px; font-family: 'Orbitron', sans-serif;">L</button>
+                        </div>
+                    </div>
+
+                    <button onclick="addToCart('CORE TEE III — BLACK (Size: M)', 12500)" class="hero-btn" style="width: 100%; text-align: center; padding: 10px; cursor: pointer; margin-top: 5px;">ADD TO BAG</button>
+                </div>
+            </div>
+
+            <!-- Product Card 5 -->
+            <div class="product-card">
+                <div class="product-img-box">
+                    <img src="img-wrapper/boy2.png" alt="CORE TEE III" class="zoomable-img">
+                </div>
+                <div class="product-info">
+                    <span class="product-tag">#05 / PHASE 01 - DROP 01</span>
+                    <h3 class="product-title">CORE TEE III — BLACK</h3>
+                    <p class="product-price">LKR 9,500.00</p>
+                    
+                    <div style="margin: 15px 0;">
+                        <span style="font-size: 0.75rem; color: #888; font-family: 'Orbitron', sans-serif; display: block; margin-bottom: 5px;">SELECT SIZE:</span>
+                        <div class="size-selector" style="display: flex; gap: 10px;">
+                            <!--<button type="button" class="size-btn active" onclick="selectSize(this, 'M')" style="background: #9d4edd; color: #fff; border: 1px solid #9d4edd; padding: 5px 12px; cursor: pointer; border-radius: 4px; font-family: 'Orbitron', sans-serif;">M</button>-->
+                            <button type="button" class="size-btn" onclick="selectSize(this, 'L')" style="background: transparent; color: #aaa; border: 1px solid rgba(157,78,221,0.3); padding: 5px 12px; cursor: pointer; border-radius: 4px; font-family: 'Orbitron', sans-serif;">L</button>
+                        </div>
+                    </div>
+
+                    <button onclick="addToCart('CORE TEE III — BLACK (Size: M)', 12500)" class="hero-btn" style="width: 100%; text-align: center; padding: 10px; cursor: pointer; margin-top: 5px;">ADD TO BAG</button>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Floating Cart Trigger Button -->
+    <button id="cart-toggle-btn" class="floating-cart-btn">
+        🛒 <span id="cart-count">0</span>
+    </button>
+
+    <!-- Slide-over Cart Drawer -->
+    <div id="cart-drawer" class="cart-drawer">
+        <div class="cart-header">
+            <h3>YOUR SHOPPING BAG</h3>
+            <button id="cart-close-btn" class="close-btn">&times;</button>
+        </div>
+        
+        <div id="cart-items" class="cart-items-container">
+            <p class="empty-cart-text">Your bag is currently empty.</p>
+        </div>
+
+        <div class="cart-footer">
+            <div class="cart-total-row">
+                <span>Total:</span>
+                <span id="cart-total">LKR 0.00</span>
+            </div>
+            <button id="whatsapp-checkout-btn" class="checkout-btn">CHECKOUT VIA WHATSAPP</button>
+        </div>
+    </div>
+
+    <div id="cart-overlay" class="cart-overlay"></div>
+
+    <!-- Footer -->
+    <footer class="footer" style="border-top: 1px solid rgba(157,78,221,0.2); margin-top: 80px;">
+        <div class="footer-copy">© 2026 NULL. ALL RIGHTS RESERVED.</div>
+        <div class="footer-links">
+            <a href="index.html">HOME</a>
+            <a href="contact.html">CONTACT</a>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="scrip.js"></script>
+    <script>
+        // Simple size selection helper
+        function selectSize(btn, size) {
+            const parent = btn.parentElement;
+            parent.querySelectorAll('.size-btn').forEach(b => {
+                b.style.background = 'transparent';
+                b.style.color = '#aaa';
+                b.style.borderColor = 'rgba(157,78,221,0.3)';
+            });
+            btn.style.background = '#9d4edd';
+            btn.style.color = '#fff';
+            btn.style.borderColor = '#9d4edd';
+
+            // Update the Add to Cart function call inside the card button dynamically based on size
+            const card = btn.closest('.product-card');
+            const title = card.querySelector('.product-title').innerText;
+            const addBtn = card.querySelector('.hero-btn');
+            
+            if(title.includes('CORE TEE I')) {
+                addBtn.setAttribute("onclick", `addToCart('CORE TEE I — BLACK (Size: ${size})', 12500)`);
+            } else if(title.includes('CORE TEE II')) {
+                addBtn.setAttribute("onclick", `addToCart('CORE TEE II — BLACK (Size: ${size})', 12500)`);
+            } else if(title.includes('CORE TEE III')) {
+                addBtn.setAttribute("onclick", `addToCart('CORE TEE III — BLACK (Size: ${size})', 12500)`);
+            }
+        }
+    </script>
+</body>
+</html>
